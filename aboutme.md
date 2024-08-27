@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+My name is Mohsin Farooq and I like building shit.
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I Bachelors and Masters in the Computer Engineering department at Rochester Institue of Technology (RIT). Since then I've worked (interned/full-time) as a software engineer at (Citi, Intel, Amazon, Square). I took at year off in 2023 to work on personal projects ranging from building physical things like hottubs, cabinets, sheds, bathrooms to creating tech that I thought was interesting (BetaShare, QuickAPI, VoiceOver). 

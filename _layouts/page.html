@@ -16,7 +16,7 @@ layout: base
       {% endif %}
 
       {{ content }}
-
+      
       {% if page.after-content %}
         <div class="after-content">
           {% for file in page.after-content %}
@@ -26,6 +26,51 @@ layout: base
       {% endif %}
 
       {% include comments.html %}
-    </div>
+    </div>    
+  </div>
+  <div class="row">
+
+    {% if page.section-type == "timeline" %}
+    <!-- {{ page.title }} Section -->
+    <section id="{{ page.title }}" class="container content-section text-center">
+        <div class="row">
+            <div >
+              <ul class="timeline">
+              {% for job in site.categories.timeline %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% capture class %}
+                  {% if loopindex == 0 %}
+                    timeline-inverted
+                  {% endif %}
+                {% endcapture %}
+
+                <li class="{{ class }}">
+                    <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if job.image %}{{ job.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>{{ job.title }}</h4>
+                            <h4 class="subheading">{{ job.subtitle }}</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">{{ job.content }}</p>
+                        </div>
+                    </div>
+                </li>
+              {% endfor %}
+                <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="{{ site.baseurl }}/{{ site.career-img }}" alt="">
+                  </div>
+                </li>
+ 
+              </ul>
+
+            </div>
+        </div>
+    </section>
+
+  {% endif %}
   </div>
 </main>

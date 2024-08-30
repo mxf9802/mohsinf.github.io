@@ -1,0 +1,10 @@
+---
+layout: null
+title: Aug 2015 - Feburary 2018
+subtitle:
+image: "assets/img/timeline/amazon-logo.jpg"
+---
+Designed and implemented an asynchronous workflow system for batch processing large amounts of data using EMR and
+displaying precomputed reports. Maintained and improved operations for a 140+ node Hadoop cluster we
+managed. Handled various critical customer facing issues while on-call. Led bottom-up initiatives around
+cost reduction. Mentored other engineers and interns.

@@ -1,0 +1,7 @@
+---
+layout: null
+title: Aug 2015 - Feburary 2018
+subtitle:
+image: "assets/img/timeline/rit_logo.jpg"
+---
+Defended Masters Thesis under the supervision of Dr. Juan Cockburn: A Switched System Identification Approach to Spindle Modeling: http://scholarworks.rit.edu/theses/8792/ 

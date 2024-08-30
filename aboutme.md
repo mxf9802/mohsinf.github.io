@@ -1,11 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: 
+section-type: timeline
+subtitle: Interested in creating virtual things that interact with reality
 ---
 
 My name is Mohsin Farooq and I like building shit.
 
-### My story
-
-I Bachelors and Masters in the Computer Engineering department at Rochester Institue of Technology (RIT). Since then I've worked (interned/full-time) as a software engineer at (Citi, Intel, Amazon, Square). I took at year off in 2023 to work on personal projects ranging from building physical things like hottubs, cabinets, sheds, bathrooms to creating tech that I thought was interesting (BetaShare, QuickAPI, VoiceOver). 
+I earned a Bachelors/Masters in the Computer Engineering from Rochester Institue of Technology (RIT). Since then I've worked as a software engineer at (Citi, Intel, Amazon, Square). I took a year off in 2023-2024 to work on personal projects ranging from building physical things like a hottub, cabinets, a shed, bathroom to creating tech that I thought was interesting (BetaShare, QuickAPI, VoiceOver).

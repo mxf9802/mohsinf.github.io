@@ -1,0 +1,7 @@
+---
+layout: null
+title: April 2020 - Sept 2023
+subtitle:
+image: "assets/img/timeline/square_logo.jpg"
+---
+Co-Architected, developed and was the tech lead for the Custom Attributes team that enabled third-party and first-party teams to add custom attributes across many of Square Offerings.

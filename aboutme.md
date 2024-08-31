@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+author: Mohsin Farooq
 section-type: timeline
 subtitle: Interested in creating virtual things that interact with reality
 ---

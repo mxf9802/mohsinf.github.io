@@ -2,8 +2,25 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
+<head>
+  {% include head.html %}
+  {% include header.html type="post" %}
 
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  
+      <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
+      <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+  
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="cleartype" content="on">
+      
+      <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/jekyll-photo-gallery.css">
+      <link rel="stylesheet" href="{{ site.url }}/assets/css/justifiedGallery.min.css">
+      <![endif]-->
+  
+</head>
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
@@ -31,6 +48,12 @@ layout: base
         </div>
       {% endif %}
 
+      <script src="{{site.url}}/assets/js/jquery-1.9.1.min.js"></script>
+      <script src="{{site.url}}/assets/js/jquery.justifiedGallery.min.js"></script>
+
+      {{content}}
+      
+      
       {% if page.before-content %}
         <div class="before-content">
           {% for file in page.before-content %}
@@ -39,10 +62,7 @@ layout: base
         </div>
       {% endif %}
 
-      <div class="blog-post">
-        {{ content }}
-      </div>
-
+      
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
@@ -86,3 +106,4 @@ layout: base
     </div>
   </div>
 </main>
+

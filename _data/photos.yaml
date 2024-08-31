@@ -1,0 +1,69 @@
+photos:
+    - title: Base Layout
+      img: base_layout
+      country: USA      
+      album: shed
+    - title: Base with Gravel
+      img: base
+      country: USA      
+      album: shed
+    - title: Base Structure
+      img: base_structure      
+      country: USA      
+      album: shed
+    - title: Plan
+      img: plan     
+      country: USA       
+      album: shed
+    - title: Framing
+      img: frame    
+      country: USA        
+      album: shed
+    - title: Sheathing
+      img: sheathing
+      country: USA            
+      album: shed
+    - title: Roofing Tar Paper
+      img: roof_tar 
+      country: USA           
+      album: shed
+    - title: Roof Panels
+      img: roof_panels      
+      country: USA      
+      album: shed
+    - title: Siding
+      img: siding   
+      country: USA         
+      album: shed
+    - title: Framed Window
+      img: window   
+      country: USA         
+      album: shed
+    - title: More Siding
+      img: more_siding      
+      country: USA      
+      album: shed
+    - title: Barn Door Pre Burning
+      img: door_preburn      
+      country: USA      
+      album: shed
+    - title: Door After Torching
+      img: door      
+      country: USA      
+      album: shed
+    - title: Prefinished Shed
+      img: prefinish      
+      country: USA      
+      album: shed
+    - title: Roof Finished
+      img: roof_finish      
+      country: USA      
+      album: shed
+    - title: Inside of the Shed
+      img: inside      
+      country: USA      
+      album: shed
+    - title: Art
+      img: art      
+      country: USA      
+      album: shed    

@@ -21,10 +21,6 @@ author: Mohsin Farooq
 
 navbar-links:
   About Me: "aboutme"
-  Projects:
-    - Tech: "aboutme"
-    - Woodworking: "aboutme"
-    - Carpentry: "aboutme"
 
 ################
 # --- Logo --- #
@@ -158,10 +154,14 @@ footer-hover-col: "#0085A1"
 site-css:
  - "/assets/css/timeline.css"
  - "/assets/css/grayscale.css" 
+ - "/assets/css/jekyll-photo-gallery.css"
+ - "/assets/css/justifiedGallery.min.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
+site-js:
+ - "assets/js/jquery.justifiedGallery.min.js"
+ - "assets/js/jquery-1.9.1.min.js"
+ - "assets/js/jquery.animsition.min.js"
 
 #################################
 # --- Web Analytics Section --- #
@@ -295,10 +295,23 @@ exclude:
   - screenshot.png
   - docs/
 
+incude:
+  - _plugins
+
 plugins:
+  # - jekyll-gallery-generator
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+#Jekyll-Photo-Gallery Settings
+exiftag:
+ sources:
+   - images/photography #Set to location of photos
 
+#MiniMagick
+#https://github.com/zroger/jekyll-minimagick
+mini_magick:
+    photography:
+        source: images/photography
+        destination: images/photography/thumbnails
+        resize: "1280x720"    

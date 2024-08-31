@@ -10,8 +10,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://beautifuljekyll.com"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|feed|404|_data|tags|staticman)}i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_plugins|assets|_layouts|_includes|LICENSE|README|feed|404|_data|tags|staticman)}i) }
+  spec.require_paths = ["lib"]
 
+  spec.requirements << "imagemagic (needed by rmagick)"
   spec.metadata      = {
     "changelog_uri"     => "https://beautifuljekyll.com/updates/",
     "documentation_uri" => "https://github.com/daattali/beautiful-jekyll#readme"
@@ -23,8 +25,12 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
   spec.add_runtime_dependency "kramdown", "~> 2.3"
   spec.add_runtime_dependency "webrick", "~> 1.8"
+  spec.add_runtime_dependency "exifr", "~> 1.2"
+  spec.add_runtime_dependency "rmagick", "~> 4.1.2"
 
+  spec.add_development_dependency "jekyll", "~> 3.0"
   spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "appraisal", "~> 2.5"
+  
 end
